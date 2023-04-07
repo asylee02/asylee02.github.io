@@ -57,8 +57,26 @@ a{
 }
 #detail_title1{
   font-size:20px;
-  font-weight: bold;
-  
+  font-weight: bold; 
+}
+#trip{
+  font-size: 40px;
+  font-weight: bolder;
+}
+.imgs{
+  display: flex;
+  justify-content: space-around;
+  width:1100px;
+  margin-top:15px;
+  padding-top:15px;
+}
+.imgs>img{
+  width: 250px;
+  height:200px;
+}
+.imgs>img:hover{
+  width: 280px;
+  height: 230px;
 }
 #detail_title2{
   font-size:20px;
