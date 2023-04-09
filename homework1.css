@@ -32,6 +32,53 @@ body{
 }
 .yellow_ment{
     text-align: center;
-    font-size: 25px;
+    font-size: 1.6em;
     color:rgb(233,203,102);
+    margin-top:2em;
+    font-family: '궁서';
+    white-space: nowrap;
+}
+.lion{
+    display:flex;
+    position:relative;
+    width: 100%;
+    margin-top:4em;
+    height:10em;
+}
+.lion_text{
+    text-align:center;
+    line-height:1.6em;
+    color:white;
+    font-size:1.2em;
+    white-space: nowrap;
+}
+.colon{
+    font-size:100px;
+    margin-top:-0.15em;
+    color:rgb(116,124,128);
+    margin-left: 0.5em;
+    margin-right:0.5em;
+    
+}
+.lion_all{
+    display: flex;
+    position:absolute;
+    left:50%;
+    transform: translate(-50%,0%);
+}
+input{
+    height:3.2em;
+    border:1px solid white;
+    border-radius: 0.5em;
+    font-size: 0.7em;
+    font-weight:bold;
+    padding-left:1.5em;
+}
+.main_text{
+    text-align: center;
+    font-size:1.5em;
+    color:white;
+    font-weight:600;
+    word-spacing: 0.2em;
+    margin-top:1.5em;
 }
