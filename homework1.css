@@ -82,3 +82,37 @@ input{
     word-spacing: 0.2em;
     margin-top:1.5em;
 }
+.checkbox{
+    margin-top:6em;
+    justify-content: center;
+    display:flex;
+}
+.check{
+    width: 32rem;
+    height: 3rem;
+    align-items: center;
+    border-radius: 3em;
+    background-color: rgb(252,238,33);
+    font-size: 1.2rem;
+    font-weight:900;
+    color: rgb(58,76,168);
+}
+.check:hover{
+    cursor: pointer;
+}
+.result{
+    width:100%;
+    height:5rem;
+    display: none;
+}
+.output1{
+    font-size : 5rem;
+}
+.output2{
+    font-size: 5rem;
+}
+.output_box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
