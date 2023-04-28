@@ -1,5 +1,22 @@
+@font-face {
+    font-family: 'OTEnjoystoriesBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body{
     background-color: rgb(58,76,168);
+    position:relative;
+    font-family: 'GmarketSansMedium';. 
 }
 .contain{
     width:100%;
@@ -102,7 +119,6 @@ input{
 }
 .result{
     width:100%;
-    height:5rem;
     display: none;
 }
 .output1{
@@ -115,4 +131,115 @@ input{
     display:flex;
     justify-content: center;
     align-items: center;
+}
+
+.loading_img {
+    animation: rotate_image 1s linear infinite;
+    transform-origin: 50% 50%;
+    object-fit: contain;
+    width:10rem;
+    height:10rem;
+    margin: auto;
+    display: none;
+}
+
+@keyframes rotate_image{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.gogo{
+    width: 20rem;
+    height: 2.8rem;
+    align-items: center;
+    text-align:center;
+    border-radius: 3em;
+    background-color: rgb(252,238,33);
+    font-size: 1.2rem;
+    margin-right:1rem;
+    font-weight:900;
+    color: rgb(58,76,168);
+}
+.result_foot{
+    display:flex;
+    justify-content: center;
+}
+.share{
+    display:flex;
+    width: 12rem;
+    height: 2.8rem;
+    justify-content:center;
+    align-items: center;
+    border-radius: 3em;
+    background-color: white;
+    font-size: 1.3rem;
+    font-weight:900;
+    color: rgb(58,76,168);
+}
+.share:hover{
+    cursor: pointer;
+}
+.popup{
+    width:30rem;
+    height:30rem;
+    border-radius: 1em;
+    background-color: white;
+    z-index: 3em;
+    position: absolute;
+    top:70%;
+    left:50%;
+    transform: translate(-50%);
+    display: none;
+}
+.gogo:hover{
+    cursor: pointer;
+}
+.pop_cont{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:3rem;
+}
+.cheer_up{
+    font-family: 'OTEnjoystoriesBA';
+    color:purple;
+    font-size: 4rem;
+}
+.mini_cheer{
+    font-family: 'OTEnjoystoriesBA';
+    color:purple;
+    font-size: 2rem;
+    margin-top:-1rem;
+}
+.logo{
+    object-fit: cover;
+    width:12rem;
+    height:12rem;
+}
+.real{
+    width: 20rem;
+    height: 2.2rem;
+    align-items: center;
+    text-align:center;
+    padding-top: 0.5rem;
+    margin-top:1.6rem;
+    border-radius: 3em;
+    background-color: rgb(252,238,33);
+    font-size: 1rem;
+    margin-right:1rem;
+    font-weight:900;
+    color: rgb(58,76,168);
+    box-shadow: 2px 1px 10px 1px gray;
+    font-weight: bold;
+}
+
+.real:hover{
+    cursor: pointer;
+}
+footer{
+    color:white;
+    text-align: center;
+    font-size:0.2rem;
+    margin-top:2rem;
 }
