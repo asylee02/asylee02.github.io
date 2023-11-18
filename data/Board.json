@@ -91,7 +91,7 @@
             "target_targetResponden" : 150,
             "point": 100,
             "status": "uncomplete",
-            "Trend" : true,
+            "trend" : true,
             "question":[
                 {
                     "question_num" : 1,
@@ -106,7 +106,7 @@
                 }
             ]
         },        {
-            "id" : 6,
+            "id" : 5,
             "thumbnails" : "",
             "topic" : "학교 폭력 실태 조사",
             "description": "현재 학교 폭력은 어느정도일까?",
@@ -117,6 +117,58 @@
             "target_targetResponden" : 120,
             "point": 100,
             "status": "complete",
+            "Trend" : false,
+            "question":[
+                {
+                    "question_num" : 1,
+                    "question" : "GPT를 사용해보신 경험이 있나요?",
+                    "answer" :{
+                        "1" : "아예 없다",
+                        "2" : "거의 없다",
+                        "3" : "보통 이다",
+                        "4" : "자주 있다",
+                        "5" : "항상 있다"
+                    }
+                }
+            ]
+        },{
+            "id" : 6,
+            "thumbnails" : "",
+            "topic" : "오늘의 저녁메뉴는 무엇인가?",
+            "description": "나는 김치찌개가 먹고싶다",
+            "category" : "문화",
+            "time": 2,
+            "age": [10,20,30],
+            "targetResponden": 10,
+            "target_targetResponden" : 20,
+            "point": 300,
+            "status": "complete",
+            "Trend" : false,
+            "question":[
+                {
+                    "question_num" : 1,
+                    "question" : "GPT를 사용해보신 경험이 있나요?",
+                    "answer" :{
+                        "1" : "아예 없다",
+                        "2" : "거의 없다",
+                        "3" : "보통 이다",
+                        "4" : "자주 있다",
+                        "5" : "항상 있다"
+                    }
+                }
+            ]
+        },{
+            "id" : 7,
+            "thumbnails" : "",
+            "topic" : "어제 나는 무엇을 하였는가?",
+            "description": "빈둥대지는 않았는가?",
+            "category" : "문화",
+            "time": 2,
+            "age": [40,50],
+            "targetResponden": 60,
+            "target_targetResponden" : 70,
+            "point": 100,
+            "status": "uncomplete",
             "Trend" : false,
             "question":[
                 {
