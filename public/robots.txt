@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sangyeon-lee.vercel.app/sitemap.xml
