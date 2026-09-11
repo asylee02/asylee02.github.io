@@ -35,18 +35,14 @@ npm run gen:seo   # robots.txt / sitemap.xml 수동 재생성
 - `public/robots.txt`, `public/sitemap.xml` (빌드 시 자동 생성, 언어별 alternate 포함)
 - 시맨틱 HTML · 이미지 `alt` · 지연 로딩
 
-### ⚠️ 배포 전 필수: 도메인 교체
-
-실제 배포 도메인으로 아래 **세 곳**의 URL을 교체하세요.
-
-1. `src/config/site.ts` → `SITE_URL`
-2. `scripts/gen-sitemap.mjs` → `SITE_URL` (교체 후 `npm run gen:seo`)
-3. `index.html` → `og:image` / `twitter:image` 의 절대 URL
-
 ## 배포
 
-- **Vercel 권장** — `vercel.json`에 SPA rewrite가 있어 `/en`·상세 페이지 새로고침이 정상 동작합니다.
-- 빌드 커맨드 `npm run build`, 출력 폴더 `dist`.
+`main`에 push하면 `.github/workflows/pages.yml`이 빌드해 **GitHub Pages**로 배포한다.
+배포 주소는 https://asylee02.github.io 다.
+
+- Pages 소스는 저장소 Settings → Pages → Source = `GitHub Actions`
+- SPA 직접 진입(`/en` 등)은 `scripts/post-build.mjs`가 만드는 `dist/404.html`이 처리한다
+- `SITE_URL`은 `src/config/site.ts`와 `scripts/gen-sitemap.mjs` 두 곳에 있다
 
 ## 구조
 
@@ -58,10 +54,11 @@ src/
 │   ├── home/       # 메인 섹션 (Hero/Career/Projects/Skills/Education/Contact)
 │   └── layout/     # Nav(언어 토글·스크롤 스파이), Footer
 ├── config/         # site.ts (SITE_URL 등)
-├── content/        # index.ts(언어 번들 선택) · en.ts(영어 콘텐츠)
-├── data/           # 한국어 콘텐츠 + ui.ts
+├── content/        # index.ts(언어 번들 선택) · en.ts · en.auto.ts(자동 생성)
+├── data/           # 한국어 콘텐츠 + ui.ts + career.auto.ts(자동 생성)
 ├── i18n.ts         # 언어 판별 · 경로 헬퍼 · useLang
 ├── layouts/        # BasicLayout
+├── lib/            # cn.ts + mergeCareer.ts(사람 레이어 + 자동 레이어 병합)
 ├── pages/          # Home, ProjectDetail
 ├── types/          # 공통 타입 · content.ts
 └── router.tsx      # 라우팅 (ko: / · en: /en)

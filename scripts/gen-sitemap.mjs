@@ -5,7 +5,7 @@ import { writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, resolve } from 'node:path';
 
-const SITE_URL = 'https://sangyeon-lee.vercel.app';
+const SITE_URL = 'https://asylee02.github.io';
 
 const paths = [
   '/',

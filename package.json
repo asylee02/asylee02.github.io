@@ -8,6 +8,7 @@
     "gen:seo": "node scripts/gen-sitemap.mjs",
     "prebuild": "node scripts/gen-sitemap.mjs",
     "build": "tsc --noEmit && vite build",
+    "postbuild": "node scripts/post-build.mjs",
     "preview": "vite preview",
     "lint": "eslint ."
   },

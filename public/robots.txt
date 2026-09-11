@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sangyeon-lee.vercel.app/sitemap.xml
+Sitemap: https://asylee02.github.io/sitemap.xml
