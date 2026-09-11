@@ -29,6 +29,20 @@ export interface CareerEntry {
   reflection?: string;
 }
 
+/**
+ * 자동 생성 레이어. portfolio-resume-sync 태스크가 career.auto.ts / en.auto.ts 를
+ * 통째로 덮어쓴다. 사람이 관리하는 CareerEntry 와 물리적으로 분리해 문장 변질을 막는다.
+ * org 만으로는 (주) 마젤원이 두 번 등장해 식별되지 않으므로 period 를 키에 포함한다.
+ */
+export interface CareerAutoEntry {
+  org: string;
+  period: string;
+  project: string;
+  highlights: string[];
+  /** ISO week. 예: 2026-W37 */
+  updatedAt: string;
+}
+
 export interface ProjectScreenshot {
   src: string;
   caption: string;
