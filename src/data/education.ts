@@ -9,7 +9,7 @@ export interface EducationEntry {
 export const educations: EducationEntry[] = [
   {
     name: '명지대학교 융합소프트웨어학과',
-    period: '2021 – 졸업예정',
+    period: '2021 – 2025.08 졸업',
     category: '학력',
     description:
       '융합소프트웨어를 전공하며 캡스톤 디자인(FatPet)을 비롯한 다양한 팀 프로젝트를 진행했습니다.',

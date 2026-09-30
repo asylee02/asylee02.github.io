@@ -189,7 +189,7 @@ const careers: CareerEntry[] = [
 const educations: EducationEntry[] = [
   {
     name: 'Myongji University, B.S. in Convergence Software',
-    period: '2021 – Expected graduation',
+    period: '2021 – Aug 2025 (Graduated)',
     category: '학력',
     description:
       'Majoring in Convergence Software, with team projects including my capstone design (FatPet).',
