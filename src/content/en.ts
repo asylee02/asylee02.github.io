@@ -92,6 +92,16 @@ const careers: CareerEntry[] = [
         ],
       },
       {
+        name: 'Korean Register Navia Web Gateway',
+        summary: 'An Express gateway serving the SPA and reverse-proxying multiple backends',
+        tech: ['Node.js', 'Express', 'SSE', 'CORS'],
+        highlights: [
+          'Served the SPA build and reverse-proxied three upstreams — API, agent, and HR',
+          'Introduced a CORS origin allowlist, replacing a configuration that reflected whatever Origin header the caller sent',
+          'Documented the upstream header pass-through contract and handled SSE streaming pass-through',
+        ],
+      },
+      {
         name: 'Teams Personal App',
         summary: 'An in-house application embedded inside Microsoft Teams',
         tech: ['TypeScript', 'React', 'Teams Toolkit'],

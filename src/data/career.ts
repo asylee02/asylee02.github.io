@@ -40,6 +40,16 @@ export const careers: CareerEntry[] = [
         ],
       },
       {
+        name: '한국선급 Navia 웹 게이트웨이',
+        summary: 'SPA 서빙과 다중 백엔드 리버스 프록시를 담당하는 Express 게이트웨이',
+        tech: ['Node.js', 'Express', 'SSE', 'CORS'],
+        highlights: [
+          'SPA 정적 서빙과 API · 에이전트 · HR 3개 업스트림 리버스 프록시 구성',
+          'CORS Origin 화이트리스트 도입 — 요청자가 보낸 Origin 헤더를 그대로 허용하던 설정을 환경변수 목록 대조 방식으로 교체',
+          '업스트림 헤더 패스스루 규약 정리 및 SSE 스트리밍 통과 처리',
+        ],
+      },
+      {
         name: 'Teams Personal App',
         summary: 'Microsoft Teams 내장 사내 애플리케이션',
         tech: ['TypeScript', 'React', 'Teams Toolkit'],
