@@ -89,6 +89,13 @@ const careers: CareerEntry[] = [
         highlights: [
           'Analyzed, designed, and built MCP (Model Context Protocol) and A2A (Agent-to-Agent) architecture',
           'Applied an inter-agent collaboration structure to the service',
+          'Replaced sub-agent → root-agent evidence hand-off that broke on output limits for large list requests with an evidence store on the Agents SDK run context, passing only short reference IDs',
+          'Added an evidence table via a nullable, backward-compatible migration so the next turn can restore previously shown evidence within the last four turns',
+          'Traced missing finish_reason to the Agents SDK converting Chat Completions output into the Responses format; built a model interceptor, then rolled it back to avoid depending on SDK internals',
+          'Traced intermittent web-search misses to a three-step chain of LLM decisions (root agent, search agent, Bing grounding agent) and reduced it to a single decision point by forcing search in the lower steps',
+          'Diagnosed and fixed a regression where a revert commit revived a local text extractor that read HWP files as UTF-8 and failed the whole upload with HTTP 500; added a regression test',
+          'Split the GHG and GA agents into dedicated plugins with their own citation rules, keeping old and new conversations listed together via category compatibility',
+          'Investigated broken source links in legacy conversations and confirmed deleted citation rows using PostgreSQL statistics (pg_stat)',
         ],
       },
       {

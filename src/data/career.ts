@@ -37,6 +37,13 @@ export const careers: CareerEntry[] = [
         highlights: [
           'MCP(Model Context Protocol) 및 A2A(Agent-to-Agent) 아키텍처 분석 · 설계 · 개발',
           '에이전트 간 협업 구조를 서비스에 적용',
+          '대량 목록 요청에서 서브에이전트→루트에이전트 근거 전달이 출력 한도로 깨지던 구조를, Agents SDK run context 기반 근거 저장소와 번호(alias) 참조 방식으로 전환',
+          '근거 저장 테이블을 nullable 하위호환 마이그레이션으로 추가해, 다음 턴에서 직전에 보여준 근거를 최근 4턴 범위로 복원',
+          'Agents SDK가 Chat Completions 응답을 Responses 형식으로 변환하며 finish_reason을 누락하는 구조를 규명하고, 모델 가로채기 구현 후 SDK 내부 의존 위험을 근거로 철회 결정',
+          '웹검색 간헐 미호출 원인을 루트 · 검색 에이전트 · Bing grounding 에이전트의 3단 LLM 판단 체인으로 규명하고, 하위 단계를 강제 검색으로 바꿔 판단 지점을 한 곳으로 축소',
+          '되돌림 커밋으로 되살아난 로컬 텍스트 추출기가 HWP를 UTF-8로 읽어 업로드 전체가 500이 되던 회귀를 규명 · 복구하고 회귀 테스트 추가',
+          'GHG · GA 에이전트를 인용 규칙이 다른 전용 플러그인으로 분리하고, 구 · 신 대화방이 함께 조회되도록 category 호환 처리',
+          '레거시 대화의 출처 링크 깨짐을 조사해 PostgreSQL 통계(pg_stat)로 citation 테이블 과거 행 삭제를 확인',
         ],
       },
       {
