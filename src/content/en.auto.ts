@@ -1,7 +1,7 @@
 // 이 파일은 portfolio-resume-sync 태스크가 자동 생성합니다. 직접 수정하지 마세요.
 // 수정해도 다음 동기화에서 덮어써집니다.
 // 손으로 관리할 내용은 src/content/en.ts 에 쓰세요.
-// generated: 2026-10-01
+// generated: 2026-11-26
 import type { CareerAutoEntry } from '@/types';
 
 export const enCareerAuto: CareerAutoEntry[] = [
@@ -29,8 +29,9 @@ export const enCareerAuto: CareerAutoEntry[] = [
       'Added SSE pass-through for GET requests to match an agent server that starts with POST and continues the stream over GET',
       'Refactored routing so that declaring an upstream list is all it takes to wire it up',
       'Set up a Husky pre-commit hook running lint, format, and type-check that blocks the commit on failure',
+      'Configured the reverse proxy CSP frame-ancestors as an explicit allowlist (Teams domains and company domains) to support iframe embedding on external sites',
     ],
-    updatedAt: '2026-10-01',
+    updatedAt: '2026-11-26',
   },
   {
     org: 'Mazelone',

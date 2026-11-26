@@ -1,7 +1,7 @@
 // 이 파일은 portfolio-resume-sync 태스크가 자동 생성합니다. 직접 수정하지 마세요.
 // 수정해도 다음 동기화에서 덮어써집니다.
 // 손으로 관리할 내용은 src/data/career.ts 에 쓰세요.
-// generated: 2026-10-01
+// generated: 2026-11-26
 import type { CareerAutoEntry } from '@/types';
 
 export const careerAuto: CareerAutoEntry[] = [
@@ -29,8 +29,9 @@ export const careerAuto: CareerAutoEntry[] = [
       'POST로 시작해 GET으로 스트림을 잇는 에이전트 서버 방식에 맞춰 GET 요청의 SSE 패스스루 지원',
       '업스트림 목록만 선언하면 라우팅이 구성되도록 리팩토링',
       'Husky pre-commit 훅으로 lint · format · 타입체크 3단계 검사를 걸어 실패 시 커밋 차단',
+      '외부 사이트 iframe 임베드를 위해 리버스 프록시의 CSP frame-ancestors를 Teams 계열과 사내 도메인만 허용하는 명시적 목록으로 구성',
     ],
-    updatedAt: '2026-10-01',
+    updatedAt: '2026-11-26',
   },
   {
     org: '(주) 마젤원',
